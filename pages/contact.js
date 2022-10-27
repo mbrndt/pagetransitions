@@ -1,24 +1,54 @@
 import { motion as m } from "framer-motion";
+import { container, item } from "../animation";
 
 export default function Contact() {
   return (
-    <main>
-      <div className="text-6xl text-center lg:text-right lg:text-9xl">
-        <h1>Let`s Talk</h1>
+    <m.main
+      initial={{ y: "100%" }}
+      animate={{ y: "0%" }}
+      transition={{ duration: 0.75, ease: "easeOut" }}
+      exit={{ opacity: 1 }}
+      className="text-gray-900 absolute top-0 left-0 w-full h-full bg-green-600 lg:px-48 px-16"
+    >
+      <div className="my-96 p-1 overflow-hidden lg:my-44">
+        <m.h1
+          initial={{ y: "100%" }}
+          animate={{ y: "0%" }}
+          transition={{ duration: 0.75, delay: 0.5 }}
+          className="lg:text-9xl text-6xl lg:text-right text-center "
+        >
+          Let`s Talk
+        </m.h1>
       </div>
       <div className="flex gap-40">
-        <div className="lg:text-2xl text-base">
+        <div className="lg:text-2xl text-base ">
           <h4>Find me: </h4>
         </div>
         <div className="lg:text-6xl text-2xl underline">
-          <ul>
-            <li className="pb-2">Twitter</li>
-            <li className="pb-2">Instagram</li>
-            <li className="pb-2">LinkedIn</li>
-            <li className="pb-2">Dribble</li>
-          </ul>
+          <m.ul variants={container} initial="hidden" animate="show">
+            <div className="overflow-hidden">
+              <m.li variants={item} className="pb-2">
+                Twitter
+              </m.li>
+            </div>
+            <div className="overflow-hidden">
+              <m.li variants={item} className="pb-2">
+                Instagram
+              </m.li>
+            </div>
+            <div className="overflow-hidden">
+              <m.li variants={item} className="pb-2">
+                LinkedIn
+              </m.li>
+            </div>
+            <div className="overflow-hidden">
+              <m.li variants={item} className="pb-2">
+                Dribble
+              </m.li>
+            </div>
+          </m.ul>
         </div>
       </div>
-    </main>
+    </m.main>
   );
 }
