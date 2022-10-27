@@ -24,7 +24,7 @@ export default function Contact() {
         <div className="lg:text-2xl text-base ">
           <h4>Find me: </h4>
         </div>
-        <div className="lg:text-xl text-2xl ">
+        <div className="lg:text-4xl text-2xl ">
           <m.ul variants={container} initial="hidden" animate="show">
             <div className="overflow-hidden">
               <m.li variants={item} className="pb-2">
