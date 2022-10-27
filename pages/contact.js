@@ -10,7 +10,7 @@ export default function Contact() {
       exit={{ opacity: 1 }}
       className="text-gray-900 absolute top-0 left-0 w-full h-full bg-gradient-to-r from-red-200 to-orange-100  lg:px-48 px-16"
     >
-      <div className="my-96 p-1 overflow-hidden lg:my-44">
+      <div className="my-80 p-1 overflow-hidden lg:my-44">
         <m.h1
           initial={{ y: "100%" }}
           animate={{ y: "0%" }}
@@ -24,7 +24,7 @@ export default function Contact() {
         <div className="lg:text-2xl text-base ">
           <h4>Find me: </h4>
         </div>
-        <div className="lg:text-4xl text-2xl ">
+        <div className="lg:text-xl text-2xl ">
           <m.ul variants={container} initial="hidden" animate="show">
             <div className="overflow-hidden">
               <m.li variants={item} className="pb-2">
