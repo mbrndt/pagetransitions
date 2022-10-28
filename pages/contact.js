@@ -21,7 +21,7 @@ export default function Contact() {
         </m.h1>
       </div>
       <div className="flex gap-40">
-        <div className="lg:text-2xl text-base ">
+        <div className="lg:text-xl text-base ">
           <h4>Find me: </h4>
         </div>
         <div className="lg:text-4xl text-2xl ">
